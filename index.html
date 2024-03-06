@@ -12,10 +12,16 @@
     <nav>
       <div class="logo">
         <a href="#home">
-          <span class="logo-text">DevOps Engineer</span>
+          <span class="logo-text">DevOps ∞ Journey</span>
         </a>
       </div>
     </nav>
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+      <label for="theme-toggle" class="theme-toggle-label">
+        <span class="theme-toggle-icon"></span>
+      </label>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -33,12 +39,13 @@
 
   <main>
     <section id="home">
-      <div class="hero">
-        <h1>Welcome to my Portfolio</h1>
+      <div class="profile">
+        <h1>Welcome to my <span class="portfolio-static">Portfolio</span></h1>
         <p>I am a skilled DevOps engineer with a passion for automating and streamlining software development and deployment processes. With years of experience in various industries, I excel at bridging the gap between development and operations teams.</p>
-        <div class="social-links">
+        <div class="social-links">        
           <a href="https://www.linkedin.com/in/rachakonda-dharmendra/" target="linkedin"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/rachakondadharmendra" target="github"><i class="fab fa-github"></i></a>
+          <a href="mailto:rachakondadharmendrainfo@gmail.com" target="github"><i class="far fa-envelope"></i></a>
         </div>
       </div>
       <div class="tech-stack">
@@ -57,7 +64,8 @@
           <img src="./DevOps_Icons/linux.png" alt="Linux" title="Linux">
           <img src="./DevOps_Icons/bash.png" alt="Bash Scripting" title="Bash Scripting">
           <img src="./DevOps_Icons/postgresql.png" alt="Postresql" title="Postresql">
-          <img src="./DevOps_Icons/argocd.png" alt="argocd" title="ArgoCD">
+          <img src="./DevOps_Icons/argocd.png" alt="ArgoCD" title="ArgoCD">
+          <img src="./DevOps_Icons/sonarqube.svg" alt="Sonar Qube" title="Sonar Qube">
           <img src="./DevOps_Icons/jira.png" alt="Jira Software" title="Jira Software">
         </div>
       </div>
@@ -65,31 +73,107 @@
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Insert your bio and experience here.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-circle-left"></div>
+          <div class="timeline-content">
+            <h3>DevOps Engineer (Freelance)</h3>
+            <p>May 2023 – Jan 2024<br>Self-Employed, Hyderabad</p>
+            <ul>
+              <li>Achieved 50% reduction in manual deployments for a US client by integrating Bitbucket, Ansible, and Jenkins to enable automated server provisioning and playbook execution on target groups, additionally set up Grafana for monitoring.</li>
+              <li>Restructured 70% of infrastructure for an Indian client by leveraging Infrastructure as Code (IaC) through Terraform, reshaping AWS architecture to enhance scalability, security, and cost efficiency, resulting in a 14% reduction in expenses.</li>
+              <li>Optimized operational workflows by implementing Ansible automation, reducing manual effort and enhancing efficiency by 5-7%. Crafted meticulous playbooks for streamlined gathering of server status and configuration details.</li>
+              <li>Built automated infrastructure for clients leveraging Ansible, Terraform, reducing manual effort by 50%. Created VPCs, subnets, network security groups aligned to best practices.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-circle-right"></div>
+          <div class="timeline-content">
+            <h3>DevOps Engineer</h3>
+            <p>Feb 2023 - Apr 2023<br>Decimal Point Analytics, Nashik</p>
+            <ul>
+              <li>Executed the seamless integration of CI/CD pipelines and New Relic as a DevOps engineer.</li>
+              <li>New to New Relic, quickly acquired the necessary skills and implemented the platform, providing valuable insights into infrastructure and application performance through built-in thresholds, alerts, and detailed reporting.</li>
+              <li>Reduced manual deployments by 5% through automated CI/CD pipelines in Jenkins. Increased deployment efficiency and consistency while minimizing human error.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">  
+          <div class="timeline-circle-left"></div>      
+          <div class="timeline-content">
+            <h3>SDE DevOps 1</h3>
+            <p>Jun 2022 - Jan 2023<br>Careerlabs Technologies Pvt. Ltd. (Product Company), Bangalore</p>
+            <ul>
+              <li>Designed and implemented Jenkins CI/CD pipelines leveraging Docker and Kubernetes enabling 50% faster deployments for Java and React.js applications.</li>
+              <li>Ramped up on AWS services and cloud infrastructure by building over 4 environments spanning EC2, VPC, IAM demonstrating ability to architect for security, reliability, and scalability.</li>
+              <!-- Add more points as needed -->
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-circle-right"></div>
+          <div class="timeline-content">
+            <h3>SDE DevOps Intern</h3>
+            <p>Dec 2021 - May 2022<br>Careerlabs Technologies Pvt. Ltd. (Product Company), Tirunelveli</p>
+            <ul>
+              <li>Expanded Linux administration skills through working with various distros like Ubuntu, RHEL, CentOS sharpening command line and troubleshooting abilities.</li>
+              <li>Collaborated with developers to optimize application performance, leveraging JMeter to address database connection starvation during peak traffic. Efforts drove a 23% improvement in response times.</li>
+              <!-- Add more points as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-
+    
+    
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project-card">
           <h3>Project 1</h3>
           <p>Description of project 1.</p>
-          <a href="#" class="project-link">Learn More</a>
         </div>
         <div class="project-card">
           <h3>Project 2</h3>
           <p>Description of project 2.</p>
-          <a href="#" class="project-link">Learn More</a>
         </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Description of project 3.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Description of project 1.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Description of project 2.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Description of project 3.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Description of project 2.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Description of project 3.</p>
+        </div>
+        <!-- Add more project cards as needed -->
       </div>
     </section>
+    
+    
 
     <section id="contact">
       <div class="contact-container">
         <div class="contact-image">
           <img src="./DevOps_Icons/getintouch_image.jpg" alt="Contact Image">
         </div>
-        <div class="form-container">
+        <div class="contact-form">
           <h2 class="section-title animate-text">Get in Touch</h2>
           <form>
             <div class="form-group">
@@ -125,33 +209,19 @@
         </div>
       </div>
     </section>
+    
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="social-links">
-        <h3>Follow Me</h3>
-        <a href="https://www.linkedin.com/in/rachakonda-dharmendra/" target="linkedin"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/rachakondadharmendra" target="github"><i class="fab fa-github"></i></a>
+  <footer class="w-full bg-gray-100 py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="https://github.com/rachakondadharmendra" target="_blank" rel="noreferrer"><i class="fab fa-github text-gray-700 mr-3 opacity-80 hover:opacity-100"></i></a>
+        <a href="https://www.linkedin.com/in/rachakonda-dharmendra/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin text-gray-700 mr-3 opacity-80 hover:opacity-100"></i></a>
+        <a href="mailto:rachakondadharmendrainfo@gmail.com"><i class="far fa-envelope text-gray-700 mr-3 opacity-80 hover:opacity-100"></i></a>
       </div>
-      <div class="quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 DevOps Engineer Portfolio</p>
-      <a href="#" class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-      </a>
+      <p class="text-sm text-gray-700 opacity-80 hover:opacity-100">&copy; 2024 rachakondadharmendra.info. All rights reserved.</p>
     </div>
   </footer>
-  
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

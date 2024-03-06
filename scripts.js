@@ -19,22 +19,12 @@ form.addEventListener('submit', (event) => {
   form.reset();
 });
 
-// Hamburger menu functionality
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navLinks.classList.toggle('show');
+const themeToggleInput = document.querySelector('.theme-toggle-input');
+const body = document.body;
+
+themeToggleInput.addEventListener('change', () => {
+  body.classList.toggle('dark-mode');
 });
 
-// Animation trigger
-window.addEventListener('load', () => {
-  const animateElements = document.querySelectorAll('.animate-text');
 
-  animateElements.forEach((element, index) => {
-    setTimeout(() => {
-      element.style.animation = `fadeInUp 1s ease-in-out forwards ${index * 0.2}s`;
-    }, 100);
-  });
-});
